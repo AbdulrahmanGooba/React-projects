@@ -1,0 +1,41 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  background: #000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  background-color: rgb(206, 172, 127);
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+button {
+  padding: 10px 30px;
+  background: yellow;
+  font-weight: 900;
+  font-size: 24px;
+  border:none;
+
+}
+
+span{
+  font-weight: 900;
+  font-size: 2rem;
+  color: white;
+  margin: 20px;
+}
