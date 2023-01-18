@@ -11,18 +11,21 @@ Now that we have our state set up, we can use it to render the component. Here i
 
 
 ```js
-import React, { useState } from 'react';
+import React from "react";
+import { useState } from 'react';
+
+
 function Counter() {
   const [count, setCount] = useState(0);
-
   return (
-    <div>
-      <p>{count}</p>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
-      <button onClick={() => setCount(count - 1)}>Decrement</button>
-    </div>
+  <div className="container">
+    <button onClick={()=> setCount(count - 1)}>-</button>
+    <span>{count}</span>
+    <button onClick={()=> setCount(count + 1)} >+</button>
+  </div>
   );
 }
+
 export default Counter;
 ```
 In this example, we render a `div` element that contains a `span` element displaying the current count, and two buttons that increment or decrement the count when clicked. The `onClick` handlers for the buttons call the `setCount` function, passing in the new count.
